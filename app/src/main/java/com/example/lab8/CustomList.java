@@ -56,10 +56,11 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * This adds a city object to the list
      * Empty for the first phase
+     * Adding the city for the second phase
      * @param city
      * */
     public void addCity(City city){
-
+        cities.add(city);
     }
 
 }
