@@ -79,8 +79,12 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * Deletes a city from the list
      * Empty for the first phase
+     * Deletes the city for the second phase
+     * @param city
      * */
-    public void delete(City city){}
+    public void delete(City city){
+        cities.remove(city);
+    }
 
 
 }
