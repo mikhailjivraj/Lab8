@@ -65,8 +65,8 @@ public class CustomListTest {
         list = MockCityList();
         City city = new City("Calgary", "Alberta");
         City city2 = new City("Edmonton", "Alberta");
-        list.add(city);
-        list.add(city2);
+        list.addCity(city);
+        list.addCity(city2);
         list.delete(city);
         //Assert size = 1
         assertEquals(1,list.getCount());
