@@ -53,4 +53,23 @@ public class CustomListTest {
         assertTrue(list.hasCity(city1));
         assertFalse(list.hasCity(city2));
     }
+
+    /**
+     * Add a city to the list
+     * Delete the city from the list
+     * Check that the length of the list decreased by one and
+     * city is no longer in the list
+     * */
+    @Test
+    void testDelete(){
+        list = MockCityList();
+        City city = new City("Calgary", "Alberta");
+        City city2 = new City("Edmonton", "Alberta");
+        list.add(city);
+        list.add(city2);
+        list.delete(city);
+        //Assert size = 1
+        assertEquals(1,list.getCount());
+        assertFalse(list.hasCity(city));
+    }
 }

@@ -67,12 +67,20 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * This checks if the list contains a city
      * Empty for the first phase
+     * Returns true or false based on city in list for second phase
      * @param city
      * @return bool
      * */
     public boolean hasCity(City city){
         return cities.contains(city);
     }
+
+
+    /**
+     * Deletes a city from the list
+     * Empty for the first phase
+     * */
+    public void delete(City city){}
 
 
 }
