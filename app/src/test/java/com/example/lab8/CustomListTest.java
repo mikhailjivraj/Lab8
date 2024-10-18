@@ -72,4 +72,20 @@ public class CustomListTest {
         assertEquals(1,list.getCount());
         assertFalse(list.hasCity(city));
     }
+
+    /**
+     * Add two cities to the list
+     * Ensure the countCities method returns 2
+     * */
+    @Test
+    void testCountCities(){
+        list = MockCityList();
+        //Check it returns 1
+        City city1 = new City("Red Deer", "Alberta");
+        City city2 = new City("Calgary","Alberta");
+        //Check if it returns 3
+        list.addCity(city1);
+        list.addCity(city2);
+        assertEquals(2,list.countCities());
+    }
 }

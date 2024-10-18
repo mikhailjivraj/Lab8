@@ -87,4 +87,16 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
 
+    /**
+     * Gets the count of cities in the list
+     * Returns -1 for the first phase
+     * */
+    public int countCities(){
+        return -1;
+    }
+
+
+
+
+
 }
